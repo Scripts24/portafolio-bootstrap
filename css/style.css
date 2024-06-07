@@ -98,26 +98,26 @@ img {
     color: var(--color-brand);
 }
 
-.link-custom{
+.link-custom {
     font-weight: 700;
-    position: relative;
+    position   : relative;
 }
 
-.link-custom::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 110%;
-    width: 0%;
-    height: 2px;
+.link-custom::after {
+    content         : "";
+    position        : absolute;
+    left            : 0;
+    top             : 110%;
+    width           : 0%;
+    height          : 2px;
     background-color: var(--color-brand);
-    transition: all .4s;
+    transition      : all .4s;
 }
 
-.link-custom:hover::after{  
-    width: 100%;    
+.link-custom:hover::after {
+    width: 100%;
 }
 
-#home h1{
+#home h1 {
     font-size: 2.5rem;
 }
