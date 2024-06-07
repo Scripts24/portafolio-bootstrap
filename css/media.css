@@ -12,6 +12,10 @@
     .navbar-brand img {
         border: 8px solid var(--color-brand);
     }
+
+    #content-wrapper {
+        padding-left: var(--sidebar-width);
+    }
 }
 
 @media (max-width: 991px) {
