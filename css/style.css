@@ -40,7 +40,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background-color: var(--color-base);
+    background-color: var(--color-base2);
     color           : var(--color-body);
     font-family     : var(--font-base);
 }
@@ -144,6 +144,8 @@ img {
     color: var(--color-brand);
 }
 
+/**INICIO*/
+
 .link-custom {
     font-weight: 700;
     position   : relative;
@@ -168,7 +170,8 @@ img {
     font-size: 2.5rem;
 }
 
-#home .la-arrow-right {
+#home .la-arrow-right,
+#work .la-arrow-right {
     animation: right 2s ease infinite;
 }
 
@@ -180,10 +183,25 @@ img {
 
     50% {
         opacity: 1;
+        color  : var(--color-brand2);
     }
 
     100% {
         transform: translateX(20px);
         opacity  : 0;
     }
+}
+
+/**TRABAJOS*/
+
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all .4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
 }
