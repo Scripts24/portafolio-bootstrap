@@ -21,6 +21,24 @@
     --font-base    : "Bai Jamjuree", serif;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .4rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--color-brand);
+    border-radius   : 5rem;
+}
+
 body {
     background-color: var(--color-base);
     color           : var(--color-body);
@@ -78,11 +96,11 @@ img {
 
 .shadow-effect {
     transition: all .5s;
- }
+}
 
 .shadow-effect:hover {
     box-shadow: -6px 6px 0 0 var(--color-brand) !important;
-    cursor: pointer;
+    cursor    : pointer;
 }
 
 .full-height {
@@ -96,15 +114,15 @@ img {
     border-bottom  : 2px solid rgba(255, 255, 255, .1);
 }
 
-.iconbox{
-    width         : 60px;
-    height        : 60px;
-    display       : flex;
-    align-items   : center;
+.iconbox {
+    width          : 60px;
+    height         : 60px;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    font-size     : 32px;
-    background    : var(--color-brand);
-    color         : var(--color-base2);
+    font-size      : 32px;
+    background     : var(--color-brand);
+    color          : var(--color-base2);
 }
 
 /**NAVBAR*/
@@ -150,19 +168,21 @@ img {
     font-size: 2.5rem;
 }
 
-#home .la-arrow-right{
-    animation  :right 2s ease infinite;
+#home .la-arrow-right {
+    animation: right 2s ease infinite;
 }
 
 @keyframes right {
-    0%{
+    0% {
         transform: translateX(-5px);
         opacity  : 0;
     }
-    50%{
-        opacity  : 1;
+
+    50% {
+        opacity: 1;
     }
-    100%{
+
+    100% {
         transform: translateX(20px);
         opacity  : 0;
     }
