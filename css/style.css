@@ -72,6 +72,19 @@ img {
     color: var(--color-brand);
 }
 
+.bg-base {
+    background-color: var(--color-base);
+}
+
+.shadow-effect {
+    transition: all .5s;
+ }
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 var(--color-brand) !important;
+    cursor: pointer;
+}
+
 .full-height {
     min-height     : 100vh;
     height         : 100%;
@@ -81,6 +94,17 @@ img {
     padding-top    : 80px;
     padding-bottom : 80px;
     border-bottom  : 2px solid rgba(255, 255, 255, .1);
+}
+
+.iconbox{
+    width         : 60px;
+    height        : 60px;
+    display       : flex;
+    align-items   : center;
+    justify-content: center;
+    font-size     : 32px;
+    background    : var(--color-brand);
+    color         : var(--color-base2);
 }
 
 /**NAVBAR*/
@@ -95,6 +119,10 @@ img {
 }
 
 .navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active {
     color: var(--color-brand);
 }
 
@@ -120,4 +148,22 @@ img {
 
 #home h1 {
     font-size: 2.5rem;
+}
+
+#home .la-arrow-right{
+    animation  :right 2s ease infinite;
+}
+
+@keyframes right {
+    0%{
+        transform: translateX(-5px);
+        opacity  : 0;
+    }
+    50%{
+        opacity  : 1;
+    }
+    100%{
+        transform: translateX(20px);
+        opacity  : 0;
+    }
 }
