@@ -24,12 +24,6 @@
 
 html {
     scroll-behavior : smooth;
-    scroll-snap-type: y mandatory;
-}
-
-section {
-    scroll-snap-align: start;
-    height           : 100vh;
 }
 
 html::-webkit-scrollbar {
@@ -235,4 +229,17 @@ img {
 
 #contact input.form-control {
     height: 44px;
+}
+
+/**FOOTER*/
+
+.social-links a {
+    width           : 40px;
+    height          : 40px;
+    display         : inline-flex;
+    align-items     : center;
+    justify-content : center;
+    background-color: var(--color-base);
+    border-radius   : 100px;
+    font-size       : 24px;
 }

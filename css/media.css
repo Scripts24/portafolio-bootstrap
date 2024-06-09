@@ -27,7 +27,7 @@
 
 @media (max-width: 500px) {
     #home h1 {
-        font-size  : 1.4rem;
+        font-size  : 1.2rem;
         margin-top : 10px;
         font-weight: 200;
     }
@@ -37,7 +37,7 @@
     }
 
     .btn-home a {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .btn-home a:last-child {
