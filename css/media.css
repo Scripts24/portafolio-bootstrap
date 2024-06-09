@@ -25,9 +25,11 @@
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 500px) {
     #home h1 {
-        font-size: 1.6rem;
+        font-size  : 1.4rem;
+        margin-top : 10px;
+        font-weight: 200;
     }
 
     .btn-home {
