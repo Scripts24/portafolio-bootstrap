@@ -24,3 +24,21 @@
         margin-top: 10px;
     }
 }
+
+@media (max-width: 475px) {
+    #home h1 {
+        font-size: 1.6rem;
+    }
+
+    .btn-home {
+        flex-direction: column;
+    }
+
+    .btn-home a {
+        margin-bottom: 20px;
+    }
+
+    .btn-home a:last-child {
+        margin-bottom: 0;
+    }
+}
