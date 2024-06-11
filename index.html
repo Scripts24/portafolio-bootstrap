@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/media.css" />
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -57,6 +58,23 @@
         </div>
     </nav>
     <!--Fin Navbar-->
+
+    <!--Color switcher-->
+    <div class="color-switcher">
+        <i class="las la-cog" onclick="toggleColorSwitcher()"></i>
+        <div class="color-buttons">
+            <button class="color-btn green" onclick="changeColor('green')"></button>
+            <button class="color-btn brown" onclick="changeColor('brown')"></button>
+            <button class="color-btn blue" onclick="changeColor('blue')"></button>
+            <button class="color-btn blue2" onclick="changeColor('blue2')"></button>
+            <button class="color-btn green2" onclick="changeColor('green2')"></button>
+            <button class="color-btn grey" onclick="changeColor('grey')"></button>
+            <button class="color-btn green3" onclick="changeColor('green3')"></button>
+            <button class="color-btn violet" onclick="changeColor('violet')"></button>
+            <button class="btn-reset" onclick="resetColor()">Reset</button>
+        </div>
+    </div>
+    <!--Fin Color switcher-->
 
     <!--Wrapper-->
     <div id="content-wrapper">
@@ -437,6 +455,7 @@
         crossorigin="anonymous"></script>
     <!--JS-->
     <script src="js/main.js"></script>
+    <script src="js/colorSwitcher.js"></script>
 </body>
 
 </html>

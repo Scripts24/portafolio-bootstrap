@@ -10,20 +10,96 @@
     text-decoration: none !important;
 }
 
+
 :root {
-    --color-body   : #b6cbce;
-    --color-heading: #eef3db;
-    --color-base   : #033f47;
-    --color-base2  : #022a30;
-    --color-brand  : #e0f780;
-    --color-brand2 : #deff58;
+    --color-base   : #183a1d;
+    --color-base2  : #24562c;
+    --color-brand  : #f0a14c;
+    --color-brand2 : #ed881d;
+    --sidebar-hsl  : 129, 41%, 10%;
+    --color-body   : #c9e8ce;
+    --color-heading: #edf7ef;
     --sidebar-width: 240px;
-    --font-base    : "Bai Jamjuree", serif;
+    --font-base    : "Bai Jamjuree", serif
 }
 
+/**Color switcher*/
+.color-switcher {
+    position      : fixed;
+    top           : 20px;
+    right         : 20px;
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    z-index       : 1000;
+}
+
+.la-cog {
+    font-size: 50px;
+    cursor   : pointer;
+}
+
+.color-buttons {
+    display       : none;
+    flex-direction: column;
+    align-items   : center;
+    margin-top    : 10px;
+}
+
+.color-buttons .color-btn {
+    width        : 30px;
+    height       : 30px;
+    margin-bottom: 10px;
+    border       : none;
+    border-radius: 50%;
+    cursor       : pointer;
+}
+
+.color-buttons .btn-reset {
+    width        : 80px;
+    background   : #000;
+    color        : #fff;
+    border       : none;
+    border-radius: 5px;
+    cursor       : pointer;
+}
+
+.color-btn.green {
+    background-color: #183a1d;
+}
+
+.color-btn.brown {
+    background-color: #523819;
+}
+
+.color-btn.blue {
+    background-color: #002b57;
+}
+
+.color-btn.blue2 {
+    background-color: #1f1d95;
+}
+
+.color-btn.green2 {
+    background-color: #0e3e32;
+}
+
+.color-btn.grey {
+    background-color: #22262a;
+}
+
+.color-btn.green3 {
+    background-color: #19341e;
+}
+
+.color-btn.violet {
+    background-color: #272154;
+}
+
+/**Custom Scrollbar*/
 
 html {
-    scroll-behavior : smooth;
+    scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
