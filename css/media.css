@@ -24,14 +24,18 @@
     }
 
     .color-switcher {
-        top: 120px !important;
+        top: 80px !important;
+    }
+
+    .la-cog{
+        font-size: 30px !important;
     }
 }
 
 @media (max-width: 500px) {
     #home h1 {
         font-size  : 1.2rem;
-        margin-top : 10px;
+        margin-top : 50px !important;
         font-weight: 200;
     }
 
